@@ -1,0 +1,10 @@
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: frontend13-app-frontend-repo
+  namespace: test
+  labels:
+    argocd.argoproj.io/secret-type: repository
+stringData:
+  url: https://github.com/devhub-mad/frontend13-app-frontend-gitops
